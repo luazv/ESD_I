@@ -44,7 +44,7 @@ public class Lista {
 
     public void inserirAposValor(int valor, int novoValor) {
         No noAux = this.inicio;
-        while (noAux != null && noAux.dado != valor) {
+        while (noAux != null && noAux.valor != valor) {
             noAux = noAux.proximo;
         }
         if (noAux == null) {

@@ -28,20 +28,20 @@ public class Iterador {
 
     public int getDadoAnterior() {
         if (haAnterior()) {
-            return this.atual.anterior.dado;
+            return this.atual.anterior.valor;
         }
         throw new IllegalStateException("Não há nó anterior.");
     }
 
     public int getDadoProximo() {
         if (haProximo()) {
-            return this.atual.proximo.dado;
+            return this.atual.proximo.valor;
         }
         throw new IllegalStateException("Não há próximo nó.");
     }
 
     public int getDado() {
-        return this.atual.dado;
+        return this.atual.valor;
     }
 
     public No getAtual() {
